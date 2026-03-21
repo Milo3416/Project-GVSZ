@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Genesys vs Zendesk | Battlecard Ejecutivo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            genesysOrange: '#ff5a1f',
+            genesysDark: '#0f172a',
+            genesysSlate: '#1e293b',
+            genesysSoft: '#f8fafc',
+            genesysBlue: '#2563eb',
+            genesysTeal: '#0f766e'
+          },
+          boxShadow: {
+            soft: '0 20px 60px rgba(15, 23, 42, 0.10)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(circle at top right, rgba(255,90,31,.10), transparent 24%),
+        radial-gradient(circle at top left, rgba(37,99,235,.08), transparent 22%),
+        linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+    }
+    .glass {
+      background: rgba(255,255,255,0.82);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,0.7);
+    }
+    .section-title {
+      letter-spacing: -0.03em;
+    }
+    .fade-up {
+      animation: fadeUp .7s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .pill-active {
+      background: linear-gradient(135deg, #ff5a1f 0%, #ff7b49 100%);
+      color: white;
+      box-shadow: 0 12px 30px rgba(255,90,31,.25);
+    }
+    .table-wrap::-webkit-scrollbar { height: 8px; }
+    .table-wrap::-webkit-scrollbar-thumb {
+      background: rgba(148, 163, 184, 0.55);
+      border-radius: 999px;
+    }
+  </style>
+</head>
+<body class="text-slate-800">
+  <header class="sticky top-0 z-50 border-b border-white/60 bg-white/70 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between py-4">
+        <div>
+          <div class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">Battlecard Ejecutivo</div>
+          <div class="text-xl md:text-2xl font-bold text-genesysDark">Genesys <span class="text-genesysOrange">vs</span> Zendesk</div>
+        </div>
+        <nav class="hidden md:flex items-center gap-3 text-sm font-medium">
+          <a href="#posicionamiento" class="px-4 py-2 rounded-full hover:bg-slate-100 transition">Posicionamiento</a>
+          <a href="#comparativo" class="px-4 py-2 rounded-full hover:bg-slate-100 transition">Comparativo</a>
+          <a href="#ia" class="px-4 py-2 rounded-full hover:bg-slate-100 transition">IA</a>
+          <a href="#discovery" class="px-4 py-2 rounded-full hover:bg-slate-100 transition">Discovery</a>
+          <a href="#cierre" class="px-4 py-2 rounded-full bg-genesysDark text-white hover:opacity-90 transition">Cierre</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-24">
+        <div class="grid lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7 fade-up">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm font-semibold text-slate-700 mb-6">
+              <span class="h-2.5 w-2.5 rounded-full bg-genesysOrange"></span>
+              Narrativa consultiva para clientes en México
+            </div>
+            <h1 class="section-title text-4xl md:text-6xl font-black leading-[0.95] text-genesysDark max-w-4xl">
+              No compares solo <span class="text-genesysBlue">herramientas</span>.
+              <br />
+              Compara el nivel de <span class="text-genesysOrange">madurez CX</span>.
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-slate-600 max-w-3xl leading-relaxed">
+              Zendesk optimiza la gestión de tickets. Genesys orquesta experiencias completas entre voz, digital, journeys, automatización y operación. Esta landing te ayuda a llevar la conversación del feature check al impacto real de negocio.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="#comparativo" class="px-6 py-3 rounded-full bg-genesysOrange text-white font-semibold shadow-soft hover:-translate-y-0.5 transition">Ver comparativo</a>
+              <a href="#ia" class="px-6 py-3 rounded-full bg-white text-slate-800 font-semibold border border-slate-200 hover:bg-slate-50 transition">Explorar IA</a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 fade-up">
+            <div class="glass rounded-3xl shadow-soft p-6 md:p-8">
+              <div class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500 mb-4">Mensaje clave</div>
+              <div class="space-y-4">
+                <div class="rounded-2xl bg-slate-50 p-5 border border-slate-200">
+                  <div class="text-sm uppercase tracking-wide text-slate-500 mb-1">Zendesk</div>
+                  <div class="text-2xl font-bold text-slate-900">Optimiza tickets</div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-br from-genesysDark to-slate-800 p-5 text-white">
+                  <div class="text-sm uppercase tracking-wide text-slate-300 mb-1">Genesys</div>
+                  <div class="text-2xl font-bold">Orquesta experiencias</div>
+                </div>
+              </div>
+              <div class="mt-6 rounded-2xl border border-orange-200 bg-orange-50 p-5">
+                <p class="text-sm font-semibold text-orange-900">
+                  “La diferencia no está solo en atender contactos. Está en prevenirlos, enrutar mejor y diseñar experiencias de punta a punta.”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="posicionamiento" class="py-8 lg:py-14">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid lg:grid-cols-3 gap-6">
+          <div class="glass rounded-3xl p-7 shadow-soft">
+            <div class="text-sm font-semibold uppercase tracking-[0.2em] text-genesysOrange">ADN</div>
+            <h3 class="mt-3 text-2xl font-bold text-genesysDark">Origen de plataforma</h3>
+            <p class="mt-4 text-slate-600 leading-relaxed">Zendesk nace como plataforma de soporte y ticketing. Genesys nace como plataforma de contact center y experiencia orquestada.</p>
+          </div>
+          <div class="glass rounded-3xl p-7 shadow-soft">
+            <div class="text-sm font-semibold uppercase tracking-[0.2em] text-genesysBlue">Diferencia</div>
+            <h3 class="mt-3 text-2xl font-bold text-genesysDark">Unificar vs orquestar</h3>
+            <p class="mt-4 text-slate-600 leading-relaxed">Unificar canales en una misma interfaz no es lo mismo que orquestar decisiones, journeys, automatización, voice routing y WEM bajo un mismo motor.</p>
+          </div>
+          <div class="glass rounded-3xl p-7 shadow-soft">
+            <div class="text-sm font-semibold uppercase tracking-[0.2em] text-genesysTeal">Madurez</div>
+            <h3 class="mt-3 text-2xl font-bold text-genesysDark">Pregunta correcta</h3>
+            <p class="mt-4 text-slate-600 leading-relaxed">La conversación no debe ser “qué software es mejor”, sino “qué tan lejos quieres llevar tu estrategia de experiencia del cliente”.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparativo" class="py-12 lg:py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <div class="text-sm font-semibold uppercase tracking-[0.22em] text-genesysOrange">Comparativo rápido</div>
+          <h2 class="section-title mt-3 text-3xl md:text-5xl font-black text-genesysDark">Dónde compiten y dónde cambia realmente la conversación</h2>
+          <p class="mt-4 text-lg text-slate-600">Úsalo para llevar al cliente de una evaluación por checklist a una discusión sobre operación, complejidad, omnicanalidad real e impacto de negocio.</p>
+        </div>
+
+        <div class="mt-10 glass rounded-3xl shadow-soft overflow-hidden">
+          <div class="table-wrap overflow-x-auto">
+            <table class="min-w-full text-left">
+              <thead class="bg-slate-900 text-white">
+                <tr>
+                  <th class="px-6 py-4 text-sm font-semibold">Categoría</th>
+                  <th class="px-6 py-4 text-sm font-semibold">Genesys Cloud CX</th>
+                  <th class="px-6 py-4 text-sm font-semibold">Zendesk</th>
+                  <th class="px-6 py-4 text-sm font-semibold">Insight consultivo</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200 bg-white/80">
+                <tr>
+                  <td class="px-6 py-5 font-semibold">ADN</td>
+                  <td class="px-6 py-5">Contact Center + Journey Orchestration</td>
+                  <td class="px-6 py-5">Ticketing + Soporte</td>
+                  <td class="px-6 py-5 text-slate-600">El origen marca el alcance natural de la plataforma.</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-5 font-semibold">Omnicanalidad</td>
+                  <td class="px-6 py-5">Nativa entre voz, digital, bots y operación</td>
+                  <td class="px-6 py-5">Multicanal con foco en bandeja unificada</td>
+                  <td class="px-6 py-5 text-slate-600">Orquestar no es lo mismo que concentrar canales.</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-5 font-semibold">Voz</td>
+                  <td class="px-6 py-5">Core robusto con ACD, IVR, routing y escalabilidad</td>
+                  <td class="px-6 py-5">Más limitado o dependiente de extensiones</td>
+                  <td class="px-6 py-5 text-slate-600">Aquí se separan los casos de soporte de los contact centers complejos.</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-5 font-semibold">Routing</td>
+                  <td class="px-6 py-5">Predictivo por skills, intención y contexto</td>
+                  <td class="px-6 py-5">Reglas, triggers y automatizaciones</td>
+                  <td class="px-6 py-5 text-slate-600">Inteligencia dinámica frente a lógica predefinida.</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-5 font-semibold">WEM</td>
+                  <td class="px-6 py-5">WFM, calidad, coaching, performance</td>
+                  <td class="px-6 py-5">Cobertura más limitada</td>
+                  <td class="px-6 py-5 text-slate-600">Genesys opera la experiencia; Zendesk resuelve el front de soporte.</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-5 font-semibold">Analytics</td>
+                  <td class="px-6 py-5">Operación + journeys + performance</td>
+                  <td class="px-6 py-5">Tickets y service analytics</td>
+                  <td class="px-6 py-5 text-slate-600">Experiencia end-to-end vs productividad de soporte.</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-5 font-semibold">Time to value</td>
+                  <td class="px-6 py-5">Medio</td>
+                  <td class="px-6 py-5">Rápido</td>
+                  <td class="px-6 py-5 text-slate-600">Zendesk suele entrar rápido; Genesys escala más lejos.</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-5 font-semibold">Escalabilidad</td>
+                  <td class="px-6 py-5">Muy fuerte en enterprise</td>
+                  <td class="px-6 py-5">Muy sólido en mid-market y service-led CX</td>
+                  <td class="px-6 py-5 text-slate-600">La decisión cambia con complejidad, volumen y criticidad del voice.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ia" class="py-12 lg:py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-4">
+            <div class="sticky top-28 space-y-4">
+              <div class="text-sm font-semibold uppercase tracking-[0.22em] text-genesysOrange">Inteligencia Artificial</div>
+              <h2 class="section-title text-3xl md:text-5xl font-black text-genesysDark">La diferencia no es solo tener IA. Es para qué la usas.</h2>
+              <p class="text-lg text-slate-600">La narrativa más potente no es comparar bots o copilots aislados. Es contrastar una IA reactiva para soporte vs una IA predictiva para orquestar experiencias.</p>
+              <div class="rounded-3xl bg-gradient-to-br from-genesysDark to-slate-800 text-white p-6 shadow-soft">
+                <div class="text-sm uppercase tracking-[0.2em] text-slate-300">Mensaje ganador</div>
+                <div class="mt-3 text-2xl font-bold leading-tight">Zendesk usa IA para resolver tickets más rápido.<br/>Genesys usa IA para mejorar la experiencia.</div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-8 space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="glass rounded-3xl p-7 shadow-soft border border-orange-100">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-2xl font-bold text-genesysDark">Genesys AI</h3>
+                  <span class="pill-active text-sm font-semibold px-4 py-2 rounded-full">Predictiva</span>
+                </div>
+                <ul class="mt-5 space-y-3 text-slate-700 leading-relaxed">
+                  <li>• Routing basado en ML, intención y contexto.</li>
+                  <li>• Journey orchestration y engagement proactivo.</li>
+                  <li>• Agent assist con siguiente mejor acción.</li>
+                  <li>• Speech + text analytics como parte de la operación.</li>
+                </ul>
+              </div>
+              <div class="glass rounded-3xl p-7 shadow-soft">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-2xl font-bold text-genesysDark">Zendesk AI</h3>
+                  <span class="px-4 py-2 rounded-full bg-slate-100 text-sm font-semibold text-slate-700">Reactiva</span>
+                </div>
+                <ul class="mt-5 space-y-3 text-slate-700 leading-relaxed">
+                  <li>• Automatización orientada al flujo de soporte.</li>
+                  <li>• Sugerencias de artículos, macros y respuestas.</li>
+                  <li>• Muy útil para productividad de agentes y autoservicio.</li>
+                  <li>• Menor profundidad en journey y routing avanzado.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="glass rounded-3xl shadow-soft overflow-hidden">
+              <div class="table-wrap overflow-x-auto">
+                <table class="min-w-full text-left">
+                  <thead class="bg-slate-50 border-b border-slate-200">
+                    <tr>
+                      <th class="px-6 py-4 text-sm font-semibold text-slate-700">Feature IA</th>
+                      <th class="px-6 py-4 text-sm font-semibold text-slate-700">Genesys</th>
+                      <th class="px-6 py-4 text-sm font-semibold text-slate-700">Zendesk</th>
+                      <th class="px-6 py-4 text-sm font-semibold text-slate-700">Lectura comercial</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-200 bg-white/80">
+                    <tr>
+                      <td class="px-6 py-5 font-semibold">Bots conversacionales</td>
+                      <td class="px-6 py-5">Integrados al contexto omnicanal</td>
+                      <td class="px-6 py-5">Fuertes en soporte y self-service</td>
+                      <td class="px-6 py-5 text-slate-600">Ambos aportan, pero Genesys conecta mejor con journey y routing.</td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-5 font-semibold">Agent Assist</td>
+                      <td class="px-6 py-5">Asistencia en tiempo real y next-best-action</td>
+                      <td class="px-6 py-5">Sugerencias y eficiencia operacional</td>
+                      <td class="px-6 py-5 text-slate-600">Genesys tiende a jugar mejor en contexto operativo amplio.</td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-5 font-semibold">Predictive Routing</td>
+                      <td class="px-6 py-5">Sí, como capacidad diferenciadora</td>
+                      <td class="px-6 py-5">Sin equivalente fuerte</td>
+                      <td class="px-6 py-5 text-slate-600">Gran palanca cuando el cliente vive de voice, SLA y performance.</td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-5 font-semibold">Journey AI</td>
+                      <td class="px-6 py-5">Parte del enfoque nativo</td>
+                      <td class="px-6 py-5">Más limitado</td>
+                      <td class="px-6 py-5 text-slate-600">La conversación pasa de atención a experiencia.</td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-5 font-semibold">Speech Analytics</td>
+                      <td class="px-6 py-5">Muy relevante en voz y calidad</td>
+                      <td class="px-6 py-5">Menor profundidad</td>
+                      <td class="px-6 py-5 text-slate-600">Clave cuando el cliente necesita visibilidad de operación real.</td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-5 font-semibold">Proactividad</td>
+                      <td class="px-6 py-5">Previene y anticipa contactos</td>
+                      <td class="px-6 py-5">Mayormente reactivo</td>
+                      <td class="px-6 py-5 text-slate-600">Antes del ticket es donde nace el valor transformacional.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 lg:py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-6">
+          <div class="glass rounded-3xl p-8 shadow-soft">
+            <div class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-500">Cuándo gana Zendesk</div>
+            <h3 class="mt-3 text-3xl font-black text-genesysDark">Rápido, simple y orientado a soporte</h3>
+            <div class="mt-6 grid sm:grid-cols-2 gap-4">
+              <div class="rounded-2xl bg-slate-50 p-5 border border-slate-200">Helpdesk y service operations</div>
+              <div class="rounded-2xl bg-slate-50 p-5 border border-slate-200">Implementación ágil</div>
+              <div class="rounded-2xl bg-slate-50 p-5 border border-slate-200">Equipos medianos</div>
+              <div class="rounded-2xl bg-slate-50 p-5 border border-slate-200">Ticketing como centro del modelo</div>
+            </div>
+          </div>
+          <div class="glass rounded-3xl p-8 shadow-soft border border-orange-100">
+            <div class="text-sm font-semibold uppercase tracking-[0.22em] text-genesysOrange">Cuándo gana Genesys</div>
+            <h3 class="mt-3 text-3xl font-black text-genesysDark">Complejidad, voz, journeys e impacto de negocio</h3>
+            <div class="mt-6 grid sm:grid-cols-2 gap-4">
+              <div class="rounded-2xl bg-orange-50 p-5 border border-orange-100">Contact center complejo</div>
+              <div class="rounded-2xl bg-orange-50 p-5 border border-orange-100">Omnicanalidad real</div>
+              <div class="rounded-2xl bg-orange-50 p-5 border border-orange-100">Journey orchestration</div>
+              <div class="rounded-2xl bg-orange-50 p-5 border border-orange-100">IA para prevención y optimización</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="discovery" class="py-12 lg:py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="glass rounded-[2rem] p-8 md:p-10 shadow-soft">
+          <div class="text-sm font-semibold uppercase tracking-[0.22em] text-genesysBlue">Discovery</div>
+          <h2 class="section-title mt-3 text-3xl md:text-5xl font-black text-genesysDark">Preguntas para elevar la conversación</h2>
+          <p class="mt-4 text-lg text-slate-600 max-w-3xl">Estas preguntas sirven para salir del terreno del ticket y entrar al terreno de la experiencia, la prevención y la operación inteligente.</p>
+          <div class="mt-8 grid md:grid-cols-2 gap-5">
+            <div class="rounded-3xl bg-white p-6 border border-slate-200 shadow-sm">
+              <div class="text-sm font-semibold text-slate-500 uppercase tracking-wide">Pregunta 1</div>
+              <div class="mt-2 text-xl font-bold text-slate-900">¿Qué porcentaje de contactos podrían evitarse?</div>
+            </div>
+            <div class="rounded-3xl bg-white p-6 border border-slate-200 shadow-sm">
+              <div class="text-sm font-semibold text-slate-500 uppercase tracking-wide">Pregunta 2</div>
+              <div class="mt-2 text-xl font-bold text-slate-900">¿Hoy miden resolución o experiencia end-to-end?</div>
+            </div>
+            <div class="rounded-3xl bg-white p-6 border border-slate-200 shadow-sm">
+              <div class="text-sm font-semibold text-slate-500 uppercase tracking-wide">Pregunta 3</div>
+              <div class="mt-2 text-xl font-bold text-slate-900">¿Qué pasa antes de que el cliente levante un ticket?</div>
+            </div>
+            <div class="rounded-3xl bg-white p-6 border border-slate-200 shadow-sm">
+              <div class="text-sm font-semibold text-slate-500 uppercase tracking-wide">Pregunta 4</div>
+              <div class="mt-2 text-xl font-bold text-slate-900">¿Su operación depende más de voz, SLA y desempeño del routing?</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cierre" class="py-12 lg:py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="rounded-[2rem] overflow-hidden shadow-soft bg-gradient-to-br from-genesysDark via-slate-800 to-slate-900 text-white">
+          <div class="grid lg:grid-cols-12 gap-8 p-8 md:p-12 items-center">
+            <div class="lg:col-span-8">
+              <div class="text-sm font-semibold uppercase tracking-[0.22em] text-orange-300">Cierre ejecutivo</div>
+              <h2 class="section-title mt-3 text-3xl md:text-5xl font-black leading-tight">Si quieres atender mejor tickets, Zendesk puede ser suficiente.<br/>Si quieres transformar la experiencia del cliente, necesitas <span class="text-genesysOrange">Genesys</span>.</h2>
+              <p class="mt-5 text-lg text-slate-300 max-w-3xl">La clave está en no vender Genesys como una lista de features. Hay que venderlo como una plataforma para prevenir fricción, optimizar journeys y conectar IA con resultados operativos y de negocio.</p>
+            </div>
+            <div class="lg:col-span-4">
+              <div class="rounded-3xl bg-white/10 border border-white/10 p-6">
+                <div class="text-sm uppercase tracking-[0.22em] text-slate-300">Takeaway</div>
+                <div class="mt-4 space-y-3">
+                  <div class="rounded-2xl bg-white/10 p-4 font-semibold">Zendesk = eficiencia operativa</div>
+                  <div class="rounded-2xl bg-orange-500/20 p-4 font-semibold border border-orange-400/20">Genesys = ventaja competitiva en experiencia</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <p>Página Web de uso interno | Genesys 2026</p>
+  </main>
+</body>
+</html>
